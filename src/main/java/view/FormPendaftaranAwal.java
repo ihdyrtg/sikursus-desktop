@@ -227,6 +227,11 @@ public class FormPendaftaranAwal extends javax.swing.JFrame {
                     "Biaya dan diskon harus berupa angka.\nContoh biaya: 500000 | diskon: 10",
                     "Input Tidak Valid",
                     JOptionPane.ERROR_MESSAGE);
+        } catch (IllegalArgumentException ex) {
+            JOptionPane.showMessageDialog(this,
+                    ex.getMessage(),
+                    "Validasi Model",
+                    JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_btnProsesActionPerformed
 
